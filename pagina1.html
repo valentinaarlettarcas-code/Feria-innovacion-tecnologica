@@ -5,8 +5,117 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Feria de Innovación Tecnológica - Proyectos</title>
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <style>
+    .pagina-proyectos {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #222222;
+      background-color: #f6f7fb;
+    }
+
+    .pagina-proyectos header {
+      background: linear-gradient(90deg, #123d70, #44338c, #6b46a8);
+      box-shadow: 0 3px 12px rgba(0, 0, 0, 0.20);
+      position: relative;
+    }
+
+    .pagina-proyectos header::after {
+      content: "";
+      position: absolute;
+      left: 0; bottom: 0;
+      width: 100%; height: 2px;
+      background: linear-gradient(90deg, #00c6ff, #7f5cff, #00c6ff);
+    }
+
+    .pagina-proyectos nav {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .pagina-proyectos nav ul {
+      margin: 0; padding: 0;
+      list-style: none;
+      display: flex;
+      justify-content: center;
+    }
+
+    .pagina-proyectos nav a {
+      display: block;
+      padding: 19px 27px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    .pagina-proyectos nav a:hover {
+      background-color: rgba(255, 255, 255, 0.12);
+      transform: translateY(-2px);
+    }
+
+    .pagina-proyectos nav a[href="pagina1.html"] {
+      background-color: rgba(255, 255, 255, 0.17);
+      box-shadow: inset 0 -3px 0 #59ddff;
+    }
+
+    .encabezado-proyectos {
+      position: relative;
+      overflow: hidden;
+      padding: 45px 30px;
+      margin: 55px auto 40px;
+      max-width: 1100px;
+      text-align: center;
+      color: white;
+      border-radius: 18px;
+      background: linear-gradient(135deg, #164b81, #44328a, #754aa7, #285e9a);
+      box-shadow: 0 10px 30px rgba(55, 45, 130, 0.25);
+    }
+
+    .encabezado-proyectos h1 {
+      margin: 0 0 12px;
+      font-size: 38px;
+    }
+
+    .contenedor-proyectos {
+      max-width: 1100px;
+      margin: 0 auto 55px;
+      padding: 0 20px;
+    }
+
+    .pagina-proyectos .card {
+      border: none;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.10);
+      transition: transform 0.25s, box-shadow 0.25s;
+    }
+
+    .pagina-proyectos .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+    }
+
+    .pagina-proyectos .card img {
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .pagina-proyectos .card-title {
+      color: #40337f;
+    }
+
+    .pagina-proyectos footer {
+      margin-top: 0;
+      padding: 28px 20px;
+      color: white;
+      text-align: center;
+      background: linear-gradient(90deg, #123d70, #44338c, #6b46a8);
+      border-top: 2px solid #58dfff;
+    }
+  </style>
 </head>
-<body>
+<body class="pagina-proyectos">
   <header>
     <nav>
       <ul>
@@ -18,8 +127,75 @@
     </nav>
   </header>
 
-  <main>
-    <!-- Aquí va el contenido propio de cada página -->
+  <section class="encabezado-proyectos">
+    <h1>Proyectos de la Feria</h1>
+    <p>Descubre las innovaciones que nuestros estudiantes traen este año.</p>
+  </section>
+
+  <main class="contenedor-proyectos">
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="img/RobotAutónomodeReciclaje.jpg" class="card-img-top" alt="Robot autónomo de reciclaje">
+          <div class="card-body">
+            <h5 class="card-title">Robot Autónomo de Reciclaje</h5>
+            <p class="card-text">Prototipo capaz de clasificar residuos usando sensores y visión por computador.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="img/laboratorioVR.jpg" class="card-img-top" alt="Simulador de laboratorio en realidad virtual">
+          <div class="card-body">
+            <h5 class="card-title">Simulador VR de Laboratorio Químico</h5>
+            <p class="card-text">Experiencia de realidad virtual que permite practicar experimentos de química sin riesgo.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="img/InvernaderoAutomatizado.png" class="card-img-top" alt="Invernadero automatizado">
+          <div class="card-body">
+            <h5 class="card-title">Invernadero Inteligente</h5>
+            <p class="card-text">Sistema IoT que monitorea humedad, luz y temperatura para optimizar cultivos.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="img/DronAutónomodeInspección.jpg" class="card-img-top" alt="Dron autónomo de inspección">
+          <div class="card-body">
+            <h5 class="card-title">Dron Autónomo de Inspección</h5>
+            <p class="card-text">Dron equipado con cámara térmica e inteligencia artificial para detectar fallas estructurales en edificios e infraestructura.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="img/BrazoRobóticodeBajoCosto.jpg" class="card-img-top" alt="Brazo robótico de bajo costo">
+          <div class="card-body">
+            <h5 class="card-title">Brazo Robótico de Bajo Costo</h5>
+            <p class="card-text">Prototipo educativo impreso en 3D para enseñanza de robótica básica.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="img/MonitordeCalidaddelAire.jpg" class="card-img-top" alt="Monitor de calidad del aire">
+          <div class="card-body">
+            <h5 class="card-title">Monitor de Calidad del Aire</h5>
+            <p class="card-text">Dispositivo portátil que mide contaminantes y alerta en tiempo real vía app.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
   </main>
 
   <footer>
