@@ -1,157 +1,305 @@
 <!DOCTYPE html>
 <html lang="es">
-  
+
 <head>
+
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Feria de Innovación Tecnológica - Contacto</title>
-  <link rel="stylesheet" href="css/styles.css">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+  <title>
+    Feria de Innovación Tecnológica - Contacto
+  </title>
+
+  <link
+    rel="stylesheet"
+    href="css/styles.css">
+
 </head>
-  
+
+
 <body class="pagina-contacto">
-  
+
+
   <header>
+
     <nav>
+
       <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="pagina1.html">Proyectos</a></li>
-        <li><a href="pagina2.html">Programa</a></li>
-        <li><a href="pagina3.html">Contacto</a></li>
+
+        <li>
+          <a href="index.html">Inicio</a>
+        </li>
+
+        <li>
+          <a href="pagina1.html">Proyectos</a>
+        </li>
+
+        <li>
+          <a href="pagina2.html">Programa</a>
+        </li>
+
+        <li>
+          <a href="pagina3.html">Contacto</a>
+        </li>
+
       </ul>
+
     </nav>
+
   </header>
 
-<main>
-   <!-- Presentación de la página -->
-      <section class="hero-contacto">
-        <div class="hero-contacto-texto">
-             <span class="etiqueta-tech">FERIA TECH 2026</span>
 
-             <h1>Contacto e Inscripción</h1>
-
-                <p>
-                    ¿Tienes un proyecto innovador?
-                    Inscríbete y forma parte de la Feria de Innovación
-                    Tecnológica 2026.
-                </p>
-        </div>
-
-        <div class="hero-contacto-imagen">
-                <img
-                    src="img/Feriatecnologica.jpg"
-                    alt="Estudiantes participando en la Feria de Innovación Tecnológica">
-            </div>
-
-        </section>
+  <main>
 
 
-        <!-- Contenido de contacto -->
-        <section class="contenedor-contacto">
+    <section class="hero-contacto">
 
-            <!-- Formulario -->
-          <div class="formulario-contacto">
 
-            <h2>Inscríbete en la feria</h2>
+      <div class="hero-contacto-texto">
 
-           <p>
-               Completa tus datos para registrar tu participación.
-            </p>
+        <span class="etiqueta-tech">
+          FERIA TECH 2026
+        </span>
 
-            <form>
 
-         <div class="campo-formulario">
-             <label for="nombre">Nombre completo</label>
-                <input
-                   type="text"
-                   id="nombre"
-                   name="nombre"
-                   placeholder="Ingresa tu nombre"
-                   required>
-          </div>
+        <h1>
+          Contacto e Inscripción
+        </h1>
 
-          <div class="campo-formulario">
-              <label for="correo">Correo electrónico</label>
-                <input
-                    type="email"
-                    id="correo"
-                    name="correo"
-                    placeholder="correo@ejemplo.com"
-                    required>
-          </div>
 
-          <div class="campo-formulario">
-              <label for="participacion">Tipo de participación</label>
+        <p>
 
-                <select id="participacion" name="participacion" required>
-                  <option value="">Selecciona una opción</option>
-                  <option value="expositor">Expositor/a</option>
-                  <option value="visitante">Visitante</option>
-                  <option value="voluntario">Voluntario/a</option>
-                </select>
-          </div>
+          ¿Tienes un proyecto innovador?
+
+          Inscríbete y forma parte de la Feria de Innovación
+          Tecnológica 2026.
+
+        </p>
+
+      </div>
+
+
+      <div class="hero-contacto-imagen">
+
+        <img
+          src="img/Feriatecnologica.jpg"
+          alt="Estudiantes participando en la Feria de Innovación Tecnológica">
+
+      </div>
+
+
+    </section>
+
+
+    <section class="contenedor-contacto">
+
+
+      <div class="formulario-contacto">
+
+
+        <h2>
+          Inscríbete en la feria
+        </h2>
+
+
+        <p>
+          Completa tus datos para registrar tu participación.
+        </p>
+
+
+        <form>
+
 
           <div class="campo-formulario">
-              <label for="mensaje">Cuéntanos sobre tu proyecto</label>
 
-              <textarea
-                id="mensaje"
-                name="mensaje"
-                rows="5"
-                placeholder="Describe brevemente tu proyecto o consulta"></textarea>
+            <label for="nombre">
+              Nombre completo
+            </label>
+
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Ingresa tu nombre"
+              required>
+
           </div>
 
-          <button type="submit" class="btn-inscripcion">
+
+          <div class="campo-formulario">
+
+            <label for="correo">
+              Correo electrónico
+            </label>
+
+            <input
+              type="email"
+              id="correo"
+              name="correo"
+              placeholder="correo@ejemplo.com"
+              required>
+
+          </div>
+
+
+          <div class="campo-formulario">
+
+            <label for="participacion">
+              Tipo de participación
+            </label>
+
+
+            <select
+              id="participacion"
+              name="participacion"
+              required>
+
+              <option value="">
+                Selecciona una opción
+              </option>
+
+              <option value="expositor">
+                Expositor/a
+              </option>
+
+              <option value="visitante">
+                Visitante
+              </option>
+
+              <option value="voluntario">
+                Voluntario/a
+              </option>
+
+            </select>
+
+          </div>
+
+
+          <div class="campo-formulario">
+
+            <label for="mensaje">
+              Cuéntanos sobre tu proyecto
+            </label>
+
+
+            <textarea
+              id="mensaje"
+              name="mensaje"
+              rows="5"
+              placeholder="Describe brevemente tu proyecto o consulta"></textarea>
+
+          </div>
+
+
+          <button
+            type="submit"
+            class="btn-inscripcion">
+
             Enviar inscripción
+
           </button>
 
-          </form>
 
-         </div>
-
-
-        <!-- Información de contacto -->
-         <aside class="info-contacto">
-
-            <h2>Información de contacto</h2>
-
-            <div class="dato-contacto">
-              <h3>Ubicación</h3>
-                <p>
-                  Campus Providencia<br>
-                  Universidad Autónoma de Chile
-                </p>
-           </div>
-
-            <div class="dato-contacto">
-                <h3>Correo</h3>
-                <p>feriatech@ejemplo.cl</p>
-            </div>
-
-            <div class="dato-contacto">
-                <h3>Teléfono</h3>
-                <p>+56 2 0000 0000</p>
-            </div>
+        </form>
 
 
-          <!-- Redes sociales simuladas -->
-           <div class="redes-sociales">
+      </div>
 
-            <h3>Síguenos</h3>
 
-              <a href="#">Instagram</a>
-              <a href="#">X / Twitter</a>
-              <a href="#">LinkedIn</a>
+      <aside class="info-contacto">
 
-            </div>
 
-         </aside>
+        <h2>
+          Información de contacto
+        </h2>
 
-        </section>
 
-  </main>  
+        <div class="dato-contacto">
+
+          <h3>
+            Ubicación
+          </h3>
+
+          <p>
+            Campus Providencia
+            <br>
+            Universidad Autónoma de Chile
+          </p>
+
+        </div>
+
+
+        <div class="dato-contacto">
+
+          <h3>
+            Correo
+          </h3>
+
+          <p>
+            feriatech@ejemplo.cl
+          </p>
+
+        </div>
+
+
+        <div class="dato-contacto">
+
+          <h3>
+            Teléfono
+          </h3>
+
+          <p>
+            +56 2 0000 0000
+          </p>
+
+        </div>
+
+
+        <div class="redes-sociales">
+
+
+          <h3>
+            Síguenos
+          </h3>
+
+
+          <a href="#">
+            Instagram
+          </a>
+
+          <a href="#">
+            X / Twitter
+          </a>
+
+          <a href="#">
+            LinkedIn
+          </a>
+
+
+        </div>
+
+
+      </aside>
+
+
+    </section>
+
+
+  </main>
+
 
   <footer>
-    <p>&copy; 2026 Feria de Innovación Tecnológica</p>
+
+    <p>
+      &copy; 2026 Feria de Innovación Tecnológica
+    </p>
+
   </footer>
+
+
 </body>
+
 </html>
