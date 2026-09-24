@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Feria de Innovación Tecnológica - Inicio</title>
+
   <link rel="stylesheet" href="css/styles.css">
+
   <style>
+
     .pagina-inicio {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
@@ -13,133 +18,144 @@
       background-color: #f6f7fb;
     }
 
-    .pagina-inicio header {
-      background: linear-gradient(90deg, #123d70, #44338c, #6b46a8);
-      box-shadow: 0 3px 12px rgba(0, 0, 0, 0.20);
-      position: relative;
-    }
-
-    .pagina-inicio header::after {
-      content: "";
-      position: absolute;
-      left: 0; bottom: 0;
-      width: 100%; height: 2px;
-      background: linear-gradient(90deg, #00c6ff, #7f5cff, #00c6ff);
-    }
-
-    .pagina-inicio nav {
-      max-width: 1100px;
-      margin: 0 auto;
-    }
-
-    .pagina-inicio nav ul {
-      margin: 0; padding: 0;
-      list-style: none;
-      display: flex;
-      justify-content: center;
-    }
-
-    .pagina-inicio nav a {
-      display: block;
-      padding: 19px 27px;
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      transition: background-color 0.3s, transform 0.2s;
-    }
-
-    .pagina-inicio nav a:hover {
-      background-color: rgba(255, 255, 255, 0.12);
-      transform: translateY(-2px);
-    }
-
-    .pagina-inicio nav a[href="index.html"] {
-      background-color: rgba(255, 255, 255, 0.17);
-      box-shadow: inset 0 -3px 0 #59ddff;
-    }
-
     #hero {
       position: relative;
       overflow: hidden;
+
       padding: 55px 30px;
       margin: 55px auto 40px;
+
       max-width: 1100px;
+
       text-align: center;
       color: white;
+
       border-radius: 18px;
-      background: linear-gradient(135deg, #164b81, #44328a, #754aa7, #285e9a);
-      box-shadow: 0 10px 30px rgba(55, 45, 130, 0.25);
+
+      background:
+        linear-gradient(
+          135deg,
+          #164b81,
+          #44328a,
+          #754aa7,
+          #285e9a
+        );
+
+      box-shadow:
+        0 10px 30px rgba(55, 45, 130, 0.25);
     }
 
-    .etiqueta-tech {
+    .pagina-inicio .etiqueta-tech {
       display: inline-block;
+
       margin-bottom: 10px;
       padding: 7px 14px;
-      border: 1px solid rgba(94, 225, 255, 0.7);
+
+      border:
+        1px solid rgba(94, 225, 255, 0.7);
+
       border-radius: 20px;
+
       color: #8beaff;
+
       font-size: 12px;
       font-weight: bold;
       letter-spacing: 2px;
-      background-color: rgba(0, 0, 0, 0.12);
-      box-shadow: 0 0 12px rgba(92, 225, 255, 0.15);
+
+      background-color:
+        rgba(0, 0, 0, 0.12);
+
+      box-shadow:
+        0 0 12px rgba(92, 225, 255, 0.15);
     }
 
     #hero h1 {
       margin: 0 0 20px;
+
       font-size: 38px;
     }
 
     #hero img {
       max-width: 700px;
+      width: 100%;
+
       border-radius: 14px;
+
       margin-bottom: 20px;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+
+      box-shadow:
+        0 8px 24px rgba(0, 0, 0, 0.25);
     }
 
     #hero .proposito {
       max-width: 700px;
+
       margin: 0 auto;
+
       font-size: 16px;
       line-height: 1.6;
     }
 
     #detalles {
       max-width: 1100px;
+
       margin: 0 auto 40px;
       padding: 0 20px;
     }
 
     #detalles h2 {
       color: #40337f;
+
       text-align: center;
+
       margin-bottom: 20px;
     }
 
     #detalles ul {
       list-style: none;
+
       margin: 0;
       padding: 0;
+
       display: flex;
       justify-content: center;
+
       gap: 20px;
+
       flex-wrap: wrap;
     }
 
     #detalles li {
       background-color: white;
+
       padding: 16px 24px;
+
       border-radius: 12px;
-      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+
+      box-shadow:
+        0 6px 18px rgba(0, 0, 0, 0.08);
     }
 
     #participacion {
       max-width: 1100px;
+
       margin: 0 auto 55px;
+
       padding: 40px 20px;
+
       text-align: center;
-      background: linear-gradient(135deg, #164b81, #44328a, #754aa7, #285e9a);
+
+      background:
+        linear-gradient(
+          135deg,
+          #164b81,
+          #44328a,
+          #754aa7,
+          #285e9a
+        );
+
       border-radius: 18px;
+
       color: white;
     }
 
@@ -149,72 +165,148 @@
 
     .btn-cta {
       display: inline-block;
+
       margin-top: 15px;
+
       padding: 14px 32px;
+
       background-color: #00c6ff;
+
       color: #123d70;
+
       font-weight: bold;
+
       text-decoration: none;
+
       border-radius: 25px;
-      transition: transform 0.2s, box-shadow 0.2s;
+
+      transition:
+        transform 0.2s,
+        box-shadow 0.2s;
     }
 
     .btn-cta:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+      transform:
+        translateY(-3px);
+
+      box-shadow:
+        0 8px 18px rgba(0, 0, 0, 0.25);
     }
 
-    .pagina-inicio footer {
-      margin-top: 0;
-      padding: 28px 20px;
-      color: white;
-      text-align: center;
-      background: linear-gradient(90deg, #123d70, #44338c, #6b46a8);
-      border-top: 2px solid #58dfff;
-    }
   </style>
+
 </head>
+
 <body class="pagina-inicio">
+
   <header>
+
     <nav>
+
       <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="pagina1.html">Proyectos</a></li>
-        <li><a href="pagina2.html">Programa</a></li>
-        <li><a href="pagina3.html">Contacto</a></li>
+
+        <li>
+          <a href="index.html">Inicio</a>
+        </li>
+
+        <li>
+          <a href="pagina1.html">Proyectos</a>
+        </li>
+
+        <li>
+          <a href="pagina2.html">Programa</a>
+        </li>
+
+        <li>
+          <a href="pagina3.html">Contacto</a>
+        </li>
+
       </ul>
+
     </nav>
+
   </header>
 
+
   <main>
+
     <section id="hero">
-      <span class="etiqueta-tech">FERIA TECH 2026</span>
-      <h1>Feria de Innovación Tecnológica 2026</h1>
-      <img src="img/Feriatecnologica.jpg" alt="Estudiantes presentando proyectos tecnológicos en la feria">
+
+      <span class="etiqueta-tech">
+        FERIA TECH 2026
+      </span>
+
+      <h1>
+        Feria de Innovación Tecnológica 2026
+      </h1>
+
+      <img
+        src="img/Feriatecnologica.jpg"
+        alt="Estudiantes presentando proyectos tecnológicos en la feria">
+
       <p class="proposito">
+
         La Feria de Innovación Tecnológica reúne a estudiantes, docentes e innovadores
         para exhibir proyectos que combinan tecnología, creatividad y soluciones a
         problemas reales de nuestra comunidad.
+
       </p>
+
     </section>
+
 
     <section id="detalles">
-      <h2>Detalles del evento</h2>
+
+      <h2>
+        Detalles del evento
+      </h2>
+
       <ul>
-        <li><strong>Fecha:</strong> 15 de octubre de 2026</li>
-        <li><strong>Lugar:</strong> Campus Providencia, Universidad Autónoma de Chile</li>
+
+        <li>
+          <strong>Fecha:</strong>
+          15 de octubre de 2026
+        </li>
+
+        <li>
+          <strong>Lugar:</strong>
+          Campus Providencia, Universidad Autónoma de Chile
+        </li>
+
       </ul>
+
     </section>
+
 
     <section id="participacion">
-      <h2>¿Quieres participar?</h2>
-      <p>Inscríbete y sé parte de esta experiencia de innovación y tecnología.</p>
-      <a href="pagina3.html" class="btn-cta">Inscríbete aquí</a>
+
+      <h2>
+        ¿Quieres participar?
+      </h2>
+
+      <p>
+        Inscríbete y sé parte de esta experiencia de innovación y tecnología.
+      </p>
+
+      <a
+        href="pagina3.html"
+        class="btn-cta">
+        Inscríbete aquí
+      </a>
+
     </section>
+
   </main>
 
+
   <footer>
-    <p>&copy; 2026 Feria de Innovación Tecnológica</p>
+
+    <p>
+      &copy; 2026 Feria de Innovación Tecnológica
+    </p>
+
   </footer>
+
 </body>
+
 </html>
