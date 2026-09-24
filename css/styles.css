@@ -598,3 +598,493 @@
   }
 
 }
+
+/* ==================================================
+   PÁGINA CONTACTO E INSCRIPCIÓN
+   Alejandra Martín Pinelo
+   ================================================== */
+
+
+/* ---------- PÁGINA ---------- */
+
+.pagina-contacto {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+
+    background-color: #f6f7fb;
+    background-image:
+        linear-gradient(rgba(40, 70, 120, 0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(40, 70, 120, 0.04) 1px, transparent 1px);
+
+    background-size: 35px 35px;
+}
+
+
+/* ==================================================
+   NAVBAR
+   ================================================== */
+
+.pagina-contacto header {
+    position: relative;
+    width: 100%;
+
+    background: linear-gradient(
+        90deg,
+        #123d70,
+        #44338c,
+        #6b46a8
+    );
+
+    box-shadow: 0 3px 12px rgba(0,0,0,0.20);
+}
+
+.pagina-contacto header::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+    height: 2px;
+
+    background: linear-gradient(
+        90deg,
+        #00c6ff,
+        #7f5cff,
+        #00c6ff
+    );
+}
+
+.pagina-contacto nav {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.pagina-contacto nav ul {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    display: flex;
+    justify-content: center;
+}
+
+.pagina-contacto nav li {
+    margin: 0;
+}
+
+.pagina-contacto nav a {
+    display: block;
+
+    padding: 19px 27px;
+
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.pagina-contacto nav a:hover {
+    background-color: rgba(255,255,255,0.12);
+}
+
+.pagina-contacto nav a.activo {
+    background-color: rgba(255,255,255,0.17);
+    box-shadow: inset 0 -3px 0 #59ddff;
+}
+
+
+/* ==================================================
+   CONTENIDO
+   ================================================== */
+
+.pagina-contacto main {
+    max-width: 1100px;
+    margin: 55px auto;
+    padding: 0 20px;
+}
+
+
+/* ==================================================
+   HERO
+   ================================================== */
+
+.hero-contacto {
+    display: grid;
+    grid-template-columns: 1.3fr 0.7fr;
+
+    min-height: 250px;
+
+    overflow: hidden;
+
+    color: white;
+
+    border-radius: 18px;
+
+    background: linear-gradient(
+        135deg,
+        #164b81,
+        #44328a,
+        #754aa7,
+        #285e9a
+    );
+
+    box-shadow: 0 10px 30px rgba(55,45,130,0.25);
+
+    margin-bottom: 35px;
+}
+
+
+/* Texto del hero */
+
+.hero-contacto-texto {
+    padding: 40px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.etiqueta-tech {
+    width: fit-content;
+
+    padding: 7px 14px;
+    margin-bottom: 10px;
+
+    border: 1px solid #5ce1ff;
+    border-radius: 20px;
+
+    color: #8beaff;
+
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.hero-contacto h1 {
+    margin: 0 0 12px;
+
+    font-size: 40px;
+}
+
+.hero-contacto h1::after {
+    content: "";
+
+    display: block;
+
+    width: 80px;
+    height: 3px;
+
+    margin-top: 12px;
+
+    border-radius: 5px;
+
+    background: linear-gradient(
+        90deg,
+        #5ce1ff,
+        #c16fff
+    );
+}
+
+.hero-contacto p {
+    margin: 0;
+
+    font-size: 16px;
+    line-height: 1.6;
+
+    color: rgba(255,255,255,0.9);
+}
+
+
+/* ---------- FOTO ---------- */
+
+.hero-contacto-imagen {
+    height: 250px;
+    overflow: hidden;
+}
+
+.hero-contacto-imagen img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/* ==================================================
+   FORMULARIO + INFORMACIÓN
+   ================================================== */
+
+.contenedor-contacto {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+    gap: 25px;
+}
+
+
+/* Las dos tarjetas */
+
+.formulario-contacto,
+.info-contacto {
+    position: relative;
+
+    padding: 30px;
+
+    background-color: white;
+
+    border-radius: 14px;
+
+    box-shadow: 0 8px 28px rgba(0,0,0,0.12);
+}
+
+
+/* Línea tecnológica superior */
+
+.formulario-contacto::before,
+.info-contacto::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 4px;
+
+    border-radius: 14px 14px 0 0;
+
+    background: linear-gradient(
+        90deg,
+        #1d74b7,
+        #6547a7,
+        #9b59b6
+    );
+}
+
+
+/* Títulos */
+
+.formulario-contacto h2,
+.info-contacto h2 {
+    margin-top: 5px;
+    margin-bottom: 22px;
+
+    color: #40337f;
+
+    font-size: 22px;
+}
+
+
+/* ==================================================
+   CAMPOS DEL FORMULARIO
+   ================================================== */
+
+.campo-formulario {
+    margin-bottom: 18px;
+}
+
+.campo-formulario label {
+    display: block;
+
+    margin-bottom: 6px;
+
+    font-weight: bold;
+    color: #333;
+}
+
+.campo-formulario input,
+.campo-formulario select,
+.campo-formulario textarea {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 11px 12px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+
+    border: 1px solid #ccd2df;
+    border-radius: 7px;
+
+    background-color: #fafbfe;
+}
+
+.campo-formulario input:focus,
+.campo-formulario select:focus,
+.campo-formulario textarea:focus {
+    outline: none;
+
+    border-color: #6547a7;
+
+    box-shadow: 0 0 0 2px rgba(101,71,167,0.12);
+}
+
+.campo-formulario textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+
+/* ==================================================
+   BOTÓN
+   ================================================== */
+
+.btn-inscripcion {
+    padding: 12px 22px;
+
+    border: none;
+    border-radius: 8px;
+
+    color: white;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    background: linear-gradient(
+        90deg,
+        #1d74b7,
+        #6547a7
+    );
+}
+
+.btn-inscripcion:hover {
+    opacity: 0.9;
+}
+
+
+/* ==================================================
+   DATOS DE CONTACTO
+   ================================================== */
+
+.dato-contacto {
+    margin-bottom: 20px;
+}
+
+.dato-contacto strong {
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: #40337f;
+}
+
+.dato-contacto p {
+    margin: 0;
+
+    line-height: 1.5;
+
+    color: #555;
+}
+
+
+/* ==================================================
+   REDES SOCIALES SIMULADAS
+   ================================================== */
+
+.redes-sociales {
+    margin-top: 25px;
+}
+
+.redes-sociales a {
+    display: inline-block;
+
+    margin: 5px 5px 5px 0;
+    padding: 8px 12px;
+
+    border-radius: 6px;
+
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+
+    background-color: #44338c;
+}
+
+.redes-sociales a:hover {
+    background-color: #6547a7;
+}
+
+
+/* ==================================================
+   FOOTER
+   ================================================== */
+
+.pagina-contacto footer {
+    padding: 25px 20px;
+
+    text-align: center;
+
+    color: white;
+
+    background: linear-gradient(
+        90deg,
+        #123d70,
+        #44338c,
+        #6b46a8
+    );
+}
+
+.pagina-contacto footer p {
+    margin: 5px 0;
+}
+
+
+/* Tu nombre */
+
+.autoria {
+    margin-top: 8px;
+
+    font-size: 12px;
+
+    opacity: 0.75;
+}
+
+
+/* ==================================================
+   RESPONSIVE
+   ================================================== */
+
+@media (max-width: 750px) {
+
+    .pagina-contacto nav ul {
+        flex-wrap: wrap;
+    }
+
+    .pagina-contacto nav a {
+        padding: 15px 16px;
+    }
+
+
+    /* Hero */
+
+    .hero-contacto {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-contacto-texto {
+        padding: 30px 25px;
+    }
+
+    .hero-contacto h1 {
+        font-size: 32px;
+    }
+
+    .hero-contacto-imagen {
+        height: 190px;
+    }
+
+
+    /* Formulario e información */
+
+    .contenedor-contacto {
+        grid-template-columns: 1fr;
+    }
+}
